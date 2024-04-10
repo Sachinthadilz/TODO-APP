@@ -1,13 +1,9 @@
-const express =  require('express');
-const PORT = 5000;
+const app = require('./app');
 
-//init app
-const app = express();
-
-//view engine
-app.set("view engine", "ejs");
+const PORT = process.env.PORT || 5050;
 
 //listen server
 app.listen(PORT,()=>{
     console.log(`Server is listening on port ${PORT}`);
 });
+
